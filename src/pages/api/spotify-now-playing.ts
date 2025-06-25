@@ -26,8 +26,8 @@ async function getAccessToken() {
     });
 
     const data = await response.json();
-    console.log('Token refresh response status:', response.status);
-    console.log('Token refresh response:', data);
+    // console.log('Token refresh response status:', response.status);
+    // console.log('Token refresh response:', data);
     
     if (!data.access_token) {
       console.error('No access token in response:', data);

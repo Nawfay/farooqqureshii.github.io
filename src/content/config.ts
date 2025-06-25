@@ -10,14 +10,14 @@ const writing = defineCollection({
   }),
 });
 
-const notes = defineCollection({
-  type: "content",
-  schema: z.object({
-    title: z.string(),
-    date: z.coerce.date(),
-    description: z.string(),
-    draft: z.boolean().default(false),
-  }),
-});
+// const notes = defineCollection({
+//   type: "content",
+//   schema: z.object({
+//     title: z.string(),
+//     date: z.coerce.date(),
+//     description: z.string(),
+//     draft: z.boolean().default(false),
+//   }),
+// });
 
-export const collections = { writing, notes };
+export const collections = { writing };
